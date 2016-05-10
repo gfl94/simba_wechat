@@ -83,7 +83,7 @@ ON POINT(p.x, p.y) IN KNN(POINT(q.x, q.y), 3)
           <p>以图中的二维数据为例，Simba使用STRPartition策略进行分区；Local index是将RDD[row]变成RDD[IndexRow]，每个partition组织成为一个Array[Row]+local index的形式，同时把partition的信息发送给master；最后基于局部分区的边界信息创建一个Global indexing。</p>
           <p>Simba中对Range query和KNN等操作都是基于上述索引实现的，详细实现算法请参阅<a href="http://www.cs.utah.edu/~dongx/simba/">项目主页</a>。</p>
           <h2>总结</h2><hr/>
-          Simba同时提供了用户友好的操作，和比Hadoop GIS等系统更卓越的性能，是目前分布式内存空间数据查询的。。。
+          Simba系统拓展SparkSQL关系型数据库，在保留其优秀的关系数据处理能力的同时，增加了对空间数据的存储和操作支持，在性能和功能等多方面超越传统的空间数据库系统。更多simba实现细节参考SIGMOD 2016论文。
       </div>
     </article>
   </div>
