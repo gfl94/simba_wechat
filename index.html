@@ -75,7 +75,7 @@ ON POINT(p.x, p.y) IN KNN(POINT(q.x, q.y), 3)
 </pre>
           </p>
           <p>用户还可以使用Zepplin进行可视化操作：</p>
-          <img src="zeeplin.png" class="am-img-responsive" />
+          <img src="zeppelin.png" class="am-img-responsive" />
           <h2>索引结构</h2><hr/>
           索引是Simba系统的关键组件。
           <img src="simba_index.png" class="am-img-responsive" />
@@ -84,6 +84,7 @@ ON POINT(p.x, p.y) IN KNN(POINT(q.x, q.y), 3)
           <p>Simba中对Range query和KNN等操作都是基于上述索引实现的，详细实现算法请参阅<a href="http://www.cs.utah.edu/~dongx/simba/">项目主页</a>。</p>
           <h2>总结</h2><hr/>
 		  Simba系统拓展SparkSQL关系型数据库，在保留其优秀的关系数据处理能力的同时，增加了对空间数据的存储和操作支持，在性能和功能等多方面超越传统的空间数据库系统。更多simba实现细节参考SIGMOD 2016论文。该项目已在<a href="https://github.com/InitialDLab/Simba/">github</a>上面开源。
+		  <hr />
       </div>
     </article>
   </div>
